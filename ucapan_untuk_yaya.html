@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Yaya!</title>
+<style>
+body { background: linear-gradient(135deg, #ffafbd, #ffc3a0); display:flex; justify-content:center; align-items:center; height:100vh; margin:0; font-family: sans-serif; }
+.card { background:white; padding:40px; border-radius:20px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.2); }
+h1 { color:#ff6b81; }
+button { background:#ff6b81; color:white; border:none; padding:15px 30px; border-radius:30px; font-size:18px; cursor:pointer; margin-top:20px; }
+</style>
+</head>
+<body>
+<div class="card">
+<h1>🎉 SELAMAT ULANG TAHUN, YAYA! 🎉</h1>
+<h2>🎂</h2>
+<p>Semoga selalu diberi kesehatan, kebahagiaan, dan kesuksesan!</p>
+<button onclick="celebrate()">Klik untuk kejutan 🎁</button>
+<p id="surprise" style="display:none; font-size:28px; margin-top:20px;">😝😜 WLEEE... Selamat tua ya, Yaya! 😜😝</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+function celebrate(){
+ document.getElementById('surprise').style.display='block';
+ confetti({ particleCount: 200, spread: 90, origin: { y: 0.6 } });
+}
+</script>
+</body>
+</html>
